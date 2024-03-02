@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+    <style>
+        body{
+            background-color: aquamarine;
+            font-weight: 1000;
+            font-family: Verdana;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10%;
+        }
+        #container{
+            width: 400px;
+            height:700px;
+            padding: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border: solid;
+            box-shadow: 6px 6px 5px black;
+            background-color: rgb(72, 252, 27);
+        }
+        #container:target{
+            background-color: aquamarine;
+        }
+        #container>*{
+            padding: 20px;
+            border: 2px solid black;
+            text-align: center;
+            box-sizing: border-box;
+            box-shadow: 0 10px 10px 0 black;
+        }
+        .cont, .cont2{
+            font-size: 25px;
+            background-color: yellowgreen;
+            margin: auto;
+            width: 100%;
+            margin-bottom: 50px;
+        }
+        .cont2{
+            font-size: 20px;
+            background-color: rgb(240, 133, 91);
+        }
+        #ip{
+            background-color: rgb(179, 131, 255);
+            transition: background-color 0.7s ease;
+        }
+        #ip:hover{
+            background-color: rgb(212, 255, 131);
+        }
+        #ip:focus{
+            background-color: rgb(66, 16, 247);
+        }
+        button {
+            background-color: rgb(238, 0, 0) ;
+            font-weight: 1000;
+            font-size: 30px;
+            cursor: pointer;
+            border-radius: 25px;
+            transition: background-color 0.7s ease;
+        }
+        button:hover{
+            background-color:rgb(88, 154, 241);
+        }
+    </style>
+</head>
+    <body>
+        <div id="container">
+            <input type="text" id="ip">
+        <h1 class="cont2">Type and click the button to print random character</h1>
+        <button onclick="str()">Click here!</button>
+        <div id="msg" class="cont">*Your word here*</div>
+        <div id="smsg" class="cont">*Your sliced word here*</div>
+        </div>
+    </body>
+    <script>
+        function str() {
+            let word = document.getElementById("ip").value.trim();
+            let ind = Math.floor(Math.random()*(word.length));
+            document.getElementById("msg").innerHTML = word;
+            document.getElementById("smsg").innerHTML = (word.charAt(ind));
+        }
+    </script>
+</html>
