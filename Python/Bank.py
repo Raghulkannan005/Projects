@@ -23,7 +23,7 @@ class BankAccount:
     def display_balance(self):
         return f"Account balance for {self.__account_holder_name}: Rs{self.__account_balance}"
 
-# Testing the BankAccount class
+# Testing the Bank Account class
 if __name__ == "__main__":
     account = BankAccount("123456789", "Raghul", 1000)
 
