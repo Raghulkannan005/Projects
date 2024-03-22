@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+<body>
+    <h1 id="title">MuscleForge</h1>
+    <div id="description">Thank you for Showing up!</div>
+    <form id="survey-form">
+        <input type="text" id="name-label" placeholder="Name:" required>
+        <input type="email" id="email-label" placeholder="Email:" required>
+        <input type="number" id="number-label" placeholder="Age:" min="16" max="99">
+        <label for="dropdown">What is your favorite thing about our GYM?</label>
+        <select name="features" id="dropdown">
+            <option>Cleanliness</option>
+            <option>Quality Equipments</option>
+            <option></option>
+            <option></option>
+        </select>
+    </form>
+
+</body>
+</html>
+<!--
+Inside the form element, you can select an option from a group of at least two radio buttons that are grouped using the name attribute
+Inside the form element, you can select several fields from a series of checkboxes, each of which must have a value attribute
+Inside the form element, you are presented with a textarea for additional comments
+Inside the form element, you are presented with a button with id of submit to submit all the inputs -->

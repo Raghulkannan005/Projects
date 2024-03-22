@@ -187,10 +187,8 @@ function clearAnswerButtons() {
 
 function selectAnswer(correct) {
     if (correct) {
-        // You can add your own logic for correct answers
         console.log('Correct!');
     } else {
-        // You can add your own logic for incorrect answers
         console.log('Incorrect!');
     }
     nextButton.classList.remove('hide');
@@ -201,7 +199,6 @@ function nextQuestion() {
     if (currentQuestionIndex < shuffledQuestions.length) {
         showQuestion(shuffledQuestions[currentQuestionIndex]);
     } else {
-        // You can add your own logic when all questions are answered
         console.log('Quiz completed!');
     }
 }
