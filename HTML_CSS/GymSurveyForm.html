@@ -4,23 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Survey Form</title>
+    <style>
+        .container{
+            width: 80vw;
+            margin: auto;
+            border: solid;
+        }
+        .container *{
+            display: block;
+            margin: 20px;
+        }
+        .container h1,
+        .container p{
+            text-align: center;
+        }
+        .container form input{
+            width: 80%;
+            box-sizing: border-box;
+            margin: inherit 0px;
+        }
+    </style>
 </head>
 <body>
-    <h1 id="title">MuscleForge</h1>
-    <div id="description">Thank you for Showing up!</div>
+   <div class="container">
+    <h1 id="title">Muscle Forge</h1>
+    <p id="description">Thank you for Showing up!</p>
     <form id="survey-form">
         <input type="text" id="name-label" placeholder="Name:" required>
         <input type="email" id="email-label" placeholder="Email:" required>
         <input type="number" id="number-label" placeholder="Age:" min="16" max="99">
         <label for="dropdown">What is your favorite thing about our GYM?</label>
         <select name="features" id="dropdown">
+            <option>Please Select an Option:</option>
             <option>Cleanliness</option>
             <option>Quality Equipments</option>
             <option>Trainers</option>
             <option>Membership Fee</option>
         </select>
     </form>
-
+   </div>
 </body>
 </html>
 <!--
