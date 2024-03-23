@@ -5,20 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Survey Form</title>
     <style>
+        body{
+            background-image: url(/Media/GymBG.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: 'Poppins', sans-serif;
+            margin: 0px;
+            color: white;
+            }
         .container{
-            width: 80vw;
-            margin: auto;
-            border: solid;
+            width: 80%;
+            margin: 50px auto;
+            border: solid white 0.5px;
+            background-color: rgb(0,0,0,0.6);
+            backdrop-filter: blur(5px);
         }
         .container *{
             display: block;
-            margin: 20px;
+            margin: 20px ;
         }
         .container h1,
         .container p{
             text-align: center;
         }
-        .container form input, textarea, #dropdown{
+        .container form input, textarea, select{
             width: 90%;
             box-sizing: border-box;
             margin: inherit 0px;
@@ -28,40 +39,60 @@
         textarea{
             height: 100px;
         }
-    </style>
+        .container form input {
+    display: inline-block;
+    margin-right: 10px;
+}
+@media screen  and (min-width:768px){
+    .container{
+        width: 628px;
+    }
+}
+        
+</style>
 </head>
 <body>
-   <div class="container">
-    <h1 id="title">Muscle Forge</h1>
-    <p id="description">Thank you for Showing up!</p>
-    <form id="survey-form">
-        <input type="text" id="name-label" placeholder="Name:" required>
-        <input type="email" id="email-label" placeholder="Email:" required>
-        <input type="number" id="number-label" placeholder="Age:" min="16" max="99">
-        <label for="dropdown">What is your favorite thing about our GYM?</label>
-        <select name="favorite" id="dropdown">
-            <option>Please Select an Option:</option>
-            <option>Cleanliness</option>
-            <option>Quality Equipments</option>
-            <option>Trainers</option>
-            <option>Membership Fee</option>
-        </select>
-        <div class="radio">
-            <label for="definitely">Definitely</label>
-            <input type="radio" name="recommend" id="definitely">
-            <label for="Maybe">Maybe</label>
-            <input type="radio" name="recommend" id="Maybe">
-            <label for="Not Sure">Not Sure</label>
-            <input type="radio" name="recommend" id="Not Sure">
-        </div>
-        <textarea placeholder="Your Comments here:"></textarea>
-        <button type="submit" id="submit">Submit</button>
-    </form>
-   </div>
+    <div class="container">
+        <h1 id="title">Muscle Forge</h1>
+        <p id="description">Thank you for Showing up!</p>
+        <form id="survey-form">
+            <div class="personal">
+                <label for="name-label">Name<input type="text" id="name-label" placeholder="Enter your Name:" required></label>
+                <label for="email-label">Email<input type="email" id="email-label" placeholder="Enter your Email:" required></label>
+                <label for="number-label">Age<input type="number" id="number-label" placeholder="Age:" min="16" max="99"></label>
+            </div>
+            <div class="dropdown">
+                <label for="dropdown">What is your favorite thing about our GYM?</label>
+            <select name="favorite" id="dropdown">
+                <option>Please Select an Option:</option>
+                <option>Cleanliness</option>
+                <option>Quality Equipments</option>
+                <option>Trainers</option>
+                <option>Membership Fee</option>
+            </select>
+            </div>
+            <div class="radio">
+               <fieldset>
+                <legend> Would you refer our Gym to your Friend?
+                    <label for="definitely">Definitely<input type="radio" name="recommend" id="definitely"></label>
+                    <label for="Maybe">Maybe<input type="radio" name="recommend" id="Maybe"></label>
+                    <label for="Not Sure">Not Sure<input type="radio" name="recommend" id="Not Sure"></label>
+                </legend>
+               </fieldset>
+            </div>
+            <div class="check">
+                <fieldset>
+                    <legend> What are the Plans you are Enrolled?
+                        <label for="enroll-Strength">Strength Training<input type="checkbox" name="enroll" id="enroll-strength"></label>
+                        <label for="enroll-Cardio">Cardio Training<input type="checkbox" name="enroll" id="enroll-Cardio"></label>
+                        <label for="enroll-Zumba">Zumba<input type="checkbox" name="enroll" id="enroll-Zumba"></label>
+                        <label for="enroll-Calisthenics">Calisthenics<input type="checkbox" name="enroll" id="enroll-Calisthenics"></label>
+                    </legend>
+                </fieldset>
+            </div>
+            <textarea placeholder="Your Comments here:"></textarea>
+            <button type="submit" id="submit">Submit</button>
+        </form>
+       </div>
 </body>
 </html>
-<!--
-Inside the form element, you can select an option from a group of at least two radio buttons that are grouped using the name attribute
-Inside the form element, you can select several fields from a series of checkboxes, each of which must have a value attribute
-Inside the form element, you are presented with a textarea for additional comments
- all the inputs -->
