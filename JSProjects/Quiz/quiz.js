@@ -1,67 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz App</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: rgb(197, 219, 243);
-        }
-
-        .container {
-            max-width: 600px;
-            margin: 50px auto;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 10px;
-            background-color: rgb(245, 240, 193);
-        }
-
-        .btn-container {
-            margin-top: 20px;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 10px 20px;
-            margin: 5px;
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            text-decoration: none;
-            transition: background-color 0.3s;
-        }
-
-        .btn:hover {
-            background-color: #0056b3;
-        }
-        .btn:active  {
-            background-color: #d48b8b;
-        }
-
-        .hide {
-            display: none;
-        }
-        
-    </style>
-</head>
-<body>
-
-<div class="container">
-    <h1>The Quizzery</h1>
-    <div id="question-container"></div>
-    <div id="answer-buttons" class="btn-container"></div>
-    <button id="next-button" class="btn hide" onclick="nextQuestion()">Next</button>
-</div>
-
-<script>
-   
-   const questions = [
+const questions = [
     {
         question: "What is the capital city of India?",
         answers: [
@@ -204,9 +141,3 @@ function nextQuestion() {
 }
 
 startGame();
-</script>
-
-</script>
-
-</body>
-</html>
