@@ -1,0 +1,35 @@
+.container{
+    border: solid;
+    width: 50%;
+    max-width: 600px;
+    height: 80%;
+    max-height: 1000px;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(rgb(22, 116, 148),rgb(148, 203, 255));
+    margin-top: 50px;
+    
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.game,h1{
+    margin: 30px;
+    border: solid 0.5px;
+    font-size: 30px;
+    padding: 5px;
+    background: linear-gradient(rgb(236, 248, 166),rgb(243, 126, 237));
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+h1{
+    background: #b7e8ff;
+}
