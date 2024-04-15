@@ -1,0 +1,23 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+.header{
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px;
+    background-color: rgb(128, 212, 245);
+}
+.header li{
+    font-weight: 600;
+    display: inline-block;
+    list-style: none;
+
+    height: 30px;
+    
+}
+.header li:hover{
+    cursor: pointer;
+    background-color: rgb(182, 221, 236);
+    
+}
