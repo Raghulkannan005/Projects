@@ -9,7 +9,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: linear-gradient(rgb(22, 116, 148),rgb(148, 203, 255));
+    background: #c5a5ff;
     margin-top: 50px;
     
 }
@@ -17,17 +17,18 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(rgb(253, 133, 117), rgb(134, 247, 168));
+    background: #1f074d;
     background-position: cover;
     height: 100vh;
-    font-family: sans-serif;
+    font-family: ;
 }
 .game,h1{
     margin: 30px;
     border: solid 0.5px;
     font-size: 30px;
+    color: #c5a5ff;
     padding: 5px;
-    background: linear-gradient(rgb(236, 248, 166),rgb(243, 126, 237));
+    background: #190b33 ;
     -moz-border-radius:10px;
     -ms-border-radius:10px;
     -o-border-radius:10px;
@@ -35,7 +36,8 @@ body{
     border-radius:10px;
 }
 h1{
-    background: #b7e8ff;
+    background: #160a31;
+    color: rgb(202, 174, 255);
 }
 .choice{
     border: solid;
