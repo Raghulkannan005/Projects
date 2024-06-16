@@ -34,4 +34,9 @@ def rps():
     elif (retry==2):
         print("Exiting...")
         quit()
+    elif (retry!=1 and retry!=2):
+        print("Please Enter a Valid Choice!")
+    else:
+        print("Exiting...")
+        quit()
 rps()

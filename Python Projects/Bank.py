@@ -27,7 +27,7 @@ class BankAccount:
 if __name__ == "__main__":
     account = BankAccount("123456789", "Raghul", 1000)
 
-    print(account.display_balance())  # Display initial balance
+    print(account.display_balance())# Display initial balance;
     print(account.deposit(500))        # Deposit Rs500
     print(account.withdraw(200))       # Withdraw Rs200
     print(account.display_balance())  # Display updated balance
